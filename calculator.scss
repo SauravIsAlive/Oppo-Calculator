@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$backgroundGradient: linear-gradient(35deg, white, rgb(117 229 255 / 19%));
+$borderRadius: 53px;
+$shadow: #3b1642 0px 0px 69px -8px;
+$font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+$textColor: rgb(41, 41, 41);
+.mast-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 635px;
+  // font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(50deg, pink, blue);
+
+  .mainBox {
+    width: 300px;
+    height: 564px;
+    background: white;
+    border-radius: 53px;
+    box-shadow: $shadow;
+
+    .inputBox {
+      height: 60%;
+      padding: 5px 0px;
+      width: 300px;
+      position: relative;
+      top: 227px;
+      background: linear-gradient(35deg, white, rgba(117, 229, 255, 0.19));
+      border-radius: 0px 0px 53px 53px;
+      .firstClass,
+      .secondClass,
+      .thirdClass,
+      .fourthClass,
+      .fifthClass {
+        display: flex;
+        align-items: baseline;
+        padding: 7px 0px;
+        font-size: 1.5rem;
+        justify-content: space-evenly;
+        align-content: center;
+        color: $textColor;
+        .common {
+          display: inline;
+          font-family: $font;
+          transition: 0.4s;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 100%;
+          // background: rgba(150, 218, 218, 0.555);
+        }
+        .common:hover {
+          background: rgba(150, 218, 218, 0.555);
+          // transition: 0.3s;
+          cursor:pointer;
+        }
+        .operators {
+          color: rgb(0, 197, 197);
+          font-weight: 500;
+          font-size: 22px;
+          // transition: 0.3s;
+        }
+      }
+    }
+
+    .outputBox {
+      font-family: $font;
+      color: $textColor;
+      font-size: 64px;
+      position: absolute;
+      right: 538px;
+      top: 157px;
+      display: flex;
+      justify-content: space-around;
+      transition: 0.4s;
+    }
+    .outputBoxTwo{
+      font-family:$font;
+      color: grey;
+      font-size:25px;
+      position: absolute;
+      right: 538px;
+      top: 230px;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+.uncle{
+  display: flex;
+  align-items: flex-end;
+}
